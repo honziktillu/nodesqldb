@@ -27,7 +27,7 @@ const UpdateUser = () => {
     }, [])
 
     const updateUser = async () => {
-        const res = await fetch("http://localhost:3000/user", {
+        const res = await fetch(`http://localhost:3000/user/${id}`, {
             method: "PUT",
             headers: {
                 'Content-Type': 'application/json'
