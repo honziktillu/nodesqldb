@@ -9,6 +9,42 @@
   pointer-events: none;
 }
 
+.fa-solid.fa-trash {
+  min-height: 128px;
+  min-width: 128px;
+}
+
+.form {
+  margin: auto;
+  max-width: 75vw;
+}
+
+.button.crud {
+  display: block;
+  margin: auto;
+}
+
+.user-container {
+  margin: auto;
+  margin-top: 1em;
+  max-width: 75vw;
+}
+
+.box {
+  display: flex;
+  justify-content: space-between;
+}
+
+img {
+  max-height: 256px;
+  max-width: 256px;
+}
+
+.card {
+  max-width: fit-content;
+  margin: auto;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -34,6 +70,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }

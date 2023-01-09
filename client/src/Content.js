@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import Box from "./Box";
 
 const Content = () => {
@@ -31,9 +32,13 @@ const Content = () => {
   }
   return (
     <>
+      <Link to='create'>
+        <button className='button crud is-success'>
+          Vytvořit uživatele
+        </button>
+      </Link>
       {users.result.map((user) => (
-        
-        <Box name={user.name} age={user.age} image={user.image} />
+        <Box id={user.id} name={user.name} age={user.age} image={user.image} />
       ))}
     </>
   );
